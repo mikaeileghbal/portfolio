@@ -1,81 +1,9 @@
 /*===============
   Color paletee
 =================*/
-:root {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-*,
-::before,
-::after {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-/* container styles */
-.container {
-  max-width: 1024px;
-  margin: 0 auto;
-}
-
-/* header styles */
-header {
-  background-color: #005c6e;
-}
-
-/* top navigation styles */
-.topnav {
-  background-color: #005c6e;
-  padding: 16px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.link, .link--top, .logo, .button, .resume {
-  display: inline-block;
-  text-decoration: none;
-  padding: 8px 0px;
-  margin: 0 16px;
-  color: #f8f8f8;
-  font-size: 18px;
-  border: 3px solid transparent;
-}
-
-.link:hover, .link--top:hover, .logo:hover, .button:hover, .resume:hover {
-  border-bottom: 3px solid green;
-}
-
-.logo {
-  font-size: 32px;
-  margin-right: auto;
-}
-
-.button, .resume {
-  background-color: #6cb3b6;
-  border-radius: 4px;
-}
-
-.resume {
-  padding: 8px 16px;
-}
-
 /* menu styles */
 .menu-container {
   display: inline-block;
-  background-color: aqua;
   padding: 0px 4px;
   cursor: pointer;
   display: none;
@@ -88,13 +16,11 @@ header {
   height: 5px;
   background-color: #f8f8f8;
   margin: 6px 0;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 .change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-          transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
 }
 
 .change .bar2 {
@@ -102,7 +28,76 @@ header {
 }
 
 .change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-          transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
-/*# sourceMappingURL=main.css.map */
+
+/*===============
+  Color paletee
+=================*/
+.link, .logo, .link--top {
+  text-decoration: none;
+  padding: 8px 16px;
+  color: #f8f8f8;
+}
+.link--top {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+}
+.link--top:hover {
+  color: #9daf62;
+}
+
+.button {
+  text-decoration: none;
+  padding: 8px 24px;
+  background-color: rgba(108, 179, 182, 0.3);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  transition: 0.2s;
+}
+.button:hover {
+  background-color: rgba(108, 179, 182, 0.5);
+}
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: inherit;
+}
+
+/* container styles */
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+/* header styles */
+header {
+  background-color: #005c6e;
+  padding: 2em 1em;
+}
+header .container {
+  display: flex;
+  align-items: center;
+}
+
+.topnav {
+  margin-left: auto;
+}
+
+.logo {
+  font-size: 30px;
+  padding: 0;
+}/*# sourceMappingURL=main.css.map */

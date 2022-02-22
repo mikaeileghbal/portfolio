@@ -1,0 +1,33 @@
+@import "global";
+
+.link {
+  text-decoration: none;
+  padding: 8px 16px;
+  color: $gray;
+
+  &--top {
+    @extend .link;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $green-light;
+    }
+  }
+}
+
+.button {
+  text-decoration: none;
+  padding: 8px 24px;
+  background-color: rgba(108, 179, 182, 0.3);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: rgba(108, 179, 182, 0.5);
+  }
+}
