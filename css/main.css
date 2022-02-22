@@ -4,9 +4,10 @@
 /* menu styles */
 .menu-container {
   display: inline-block;
+  margin-left: auto;
   padding: 0px 4px;
   cursor: pointer;
-  display: none;
+  z-index: 2;
 }
 
 .bar1,
@@ -29,6 +30,35 @@
 
 .change .bar3 {
   transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* slide menu styles */
+.sidenav {
+  position: fixed;
+  height: 0px;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.5s;
+}
+
+/* The side navigation menu links */
+.sidenav a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Mouse over links */
+.sidenav a:hover {
+  color: #f1f1f1;
 }
 
 /*===============
@@ -95,6 +125,7 @@ header .container {
 
 .topnav {
   margin-left: auto;
+  display: none;
 }
 
 .logo {
