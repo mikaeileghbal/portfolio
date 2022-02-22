@@ -1,13 +1,68 @@
-/*===============
-  Color paletee
-=================*/
-/* menu styles */
+/* Base styles */
+:root {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* Container styles */
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+/* Header styles */
+header {
+  background-color: #005c6e;
+  padding: 0.5em 1em;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topnav {
+  margin-left: auto;
+  display: none;
+}
+
+.logo {
+  font-size: 30px;
+  padding: 0;
+}
+
+/* Top navigation styles */
 .menu-container {
   display: inline-block;
   margin-left: auto;
   padding: 0px 4px;
   cursor: pointer;
   z-index: 2;
+}
+
+.menu-container:hover {
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .bar1,
@@ -17,11 +72,13 @@
   height: 5px;
   background-color: #f8f8f8;
   margin: 6px 0;
+  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 .change .bar1 {
-  transform: rotate(-45deg) translate(-9px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+          transform: rotate(-45deg) translate(-9px, 6px);
 }
 
 .change .bar2 {
@@ -29,10 +86,11 @@
 }
 
 .change .bar3 {
-  transform: rotate(45deg) translate(-8px, -8px);
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+          transform: rotate(45deg) translate(-8px, -8px);
 }
 
-/* slide menu styles */
+/* Slide menu styles */
 .sidenav {
   position: fixed;
   height: 0px;
@@ -40,41 +98,92 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #11202c;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
 /* The side navigation menu links */
-.sidenav a {
+.sidenav > a, .social i {
   padding: 8px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 35px;
   color: #818181;
-  display: block;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
+.sidenav > a {
+  display: block;
+}
+
 /* Mouse over links */
-.sidenav a:hover {
+.sidenav > a:hover {
   color: #f1f1f1;
 }
 
-/*===============
-  Color paletee
-=================*/
+/* Social links styles */
+.social {
+  padding: 24px;
+}
+
+.social i {
+  font-size: 22px;
+}
+
+.social > a:hover i {
+  color: white;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+/* Links and buttons styles */
 .link, .logo, .link--top {
   text-decoration: none;
   padding: 8px 16px;
   color: #f8f8f8;
 }
+
 .link--top {
   font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
+
 .link--top:hover {
   color: #9daf62;
 }
@@ -86,49 +195,11 @@
   border-radius: 4px;
   color: white;
   font-size: 18px;
+  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
+
 .button:hover {
   background-color: rgba(108, 179, 182, 0.5);
 }
-
-:root {
-  box-sizing: border-box;
-}
-
-*,
-::before,
-::after {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  box-sizing: inherit;
-}
-
-/* container styles */
-.container {
-  max-width: 1220px;
-  margin: 0 auto;
-}
-
-/* header styles */
-header {
-  background-color: #005c6e;
-  padding: 2em 1em;
-}
-header .container {
-  display: flex;
-  align-items: center;
-}
-
-.topnav {
-  margin-left: auto;
-  display: none;
-}
-
-.logo {
-  font-size: 30px;
-  padding: 0;
-}/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map */

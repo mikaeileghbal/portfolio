@@ -1,12 +1,16 @@
-/* menu styles */
+/* Top navigation styles */
 .menu-container {
   display: inline-block;
   margin-left: auto;
-  //background-color: aqua;
   padding: 0px 4px;
   cursor: pointer;
-
   z-index: 2;
+
+  &:hover {
+    animation-name: rotate;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+  }
 }
 
 .bar1,
@@ -31,7 +35,7 @@
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
-/* slide menu styles */
+/* Slide menu styles */
 .sidenav {
   position: fixed;
   height: 0px;
@@ -39,24 +43,53 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: $navy;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   text-align: center;
   transition: 0.5s;
 }
 
 /* The side navigation menu links */
-.sidenav a {
+%sidemenulinks {
   padding: 8px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 35px;
   color: #818181;
-  display: block;
   transition: 0.3s;
+}
+.sidenav > a {
+  @extend %sidemenulinks;
+  display: block;
 }
 
 /* Mouse over links */
-.sidenav a:hover {
+.sidenav > a:hover {
   color: #f1f1f1;
+}
+
+/* Social links styles */
+.social {
+  padding: 24px;
+}
+
+.social i {
+  @extend %sidemenulinks;
+  font-size: 22px;
+}
+
+.social > a:hover i {
+  color: white;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
 }

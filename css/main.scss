@@ -1,46 +1,5 @@
 @import "global";
+@import "base";
+@import "header";
 @import "menu";
 @import "links";
-
-:root {
-  box-sizing: border-box;
-}
-
-*,
-::before,
-::after {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  box-sizing: inherit;
-}
-
-/* container styles */
-.container {
-  max-width: $container-max-width;
-  margin: 0 auto;
-}
-
-/* header styles */
-header {
-  background-color: $green-dark;
-  padding: 2em $container-padding-left-right;
-
-  .container {
-    display: flex;
-    align-items: center;
-  }
-}
-
-.topnav {
-  margin-left: auto;
-  display: none;
-}
-
-.logo {
-  @extend .link;
-  font-size: 30px;
-  padding: 0;
-}

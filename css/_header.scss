@@ -1,0 +1,21 @@
+/* Header styles */
+header {
+  background-color: $green-dark;
+  padding: 0.5em $container-padding-left-right;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.topnav {
+  margin-left: auto;
+  display: none;
+}
+
+.logo {
+  @extend .link;
+  font-size: 30px;
+  padding: 0;
+}

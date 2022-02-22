@@ -1,0 +1,21 @@
+/* Base styles */
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: inherit;
+}
+
+/* Container styles */
+.container {
+  max-width: $container-max-width;
+  margin: 0 auto;
+}
