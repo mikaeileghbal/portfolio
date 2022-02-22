@@ -42,11 +42,6 @@ header .container {
   display: none;
 }
 
-.logo {
-  font-size: 30px;
-  padding: 0;
-}
-
 /* Top navigation styles */
 .menu-container {
   display: inline-block;
@@ -170,7 +165,7 @@ header .container {
 }
 
 /* Links and buttons styles */
-.link, .logo, .link--top {
+.link, .link--top, .logo {
   text-decoration: none;
   padding: 8px 16px;
   color: #f8f8f8;
@@ -201,5 +196,10 @@ header .container {
 
 .button:hover {
   background-color: rgba(108, 179, 182, 0.5);
+}
+
+.logo {
+  font-size: 30px;
+  padding: 0;
 }
 /*# sourceMappingURL=main.css.map */

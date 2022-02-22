@@ -32,3 +32,9 @@
     background-color: rgba(108, 179, 182, 0.5);
   }
 }
+
+.logo {
+  @extend .link;
+  font-size: 30px;
+  padding: 0;
+}
