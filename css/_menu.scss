@@ -1,30 +1,45 @@
-/* Top navigation styles */
 .menu-container {
   display: inline-block;
+  @include tablet {
+    display: none;
+  }
   margin-left: auto;
   padding: 0px 4px;
   cursor: pointer;
   z-index: 2;
-
+  @include transition;
   &:hover {
-    animation-name: rotate;
-    animation-duration: 0.4s;
-    animation-fill-mode: forwards;
+    .bar1,
+    .bar2,
+    .bar3 {
+      background-color: $green-light;
+    }
   }
+}
+.menu-container.change {
+  transform: rotate(180deg);
 }
 
 .bar1,
 .bar2,
 .bar3 {
   width: 35px;
-  height: 5px;
+  height: 2px;
   background-color: $gray;
   margin: 6px 0;
-  transition: 0.4s;
+  @include transition;
+}
+
+.bar1 {
+  //background-color: red;
+}
+.bar2 {
+  width: 25px;
+  margin-left: 5px;
 }
 
 .change .bar1 {
-  transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-6px, 4px);
 }
 
 .change .bar2 {
@@ -32,10 +47,9 @@
 }
 
 .change .bar3 {
-  transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -4px);
 }
 
-/* Slide menu styles */
 .sidenav {
   position: fixed;
   height: 0px;
@@ -48,30 +62,30 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   text-align: center;
   transition: 0.5s;
+
+  @include tablet {
+    display: none;
+  }
 }
 
-/* The side navigation menu links */
 %sidemenulinks {
   padding: 8px;
   text-decoration: none;
   font-size: 35px;
-  color: #818181;
-  transition: 0.3s;
+  color: $gray-dark;
+  @include transition;
 }
 .sidenav > a {
   @extend %sidemenulinks;
   display: block;
+
+  &:hover {
+    color: $green-light;
+  }
 }
 
-/* Mouse over links */
-.sidenav > a:hover {
-  color: #f1f1f1;
-}
-
-/* Social links styles */
 .social {
   padding: 24px;
 }

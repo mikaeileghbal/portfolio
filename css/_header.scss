@@ -1,7 +1,9 @@
-/* Header styles */
 header {
   background-color: $green-dark;
-  padding: 0.5em $container-padding-left-right;
+  padding: 1.6em $container-padding-left-right;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 
   .container {
     display: flex;
@@ -10,6 +12,9 @@ header {
 }
 
 .topnav {
-  margin-left: auto;
   display: none;
+  margin-left: auto;
+  @include tablet {
+    display: block;
+  }
 }
