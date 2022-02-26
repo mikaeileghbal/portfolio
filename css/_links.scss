@@ -33,7 +33,7 @@
   @include transition;
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.18);
+    background-color: rgba(255, 255, 255, 0.2);
   }
 
   &--resume {
@@ -50,6 +50,11 @@
   padding: 0.2em 0.3em 0.3em 0.4em;
   margin: 0;
   text-align: center;
+  z-index: 2;
   background-color: rgba(255, 255, 255, 0.2);
   clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  @include transition;
+  &:hover {
+    background-color: $green-light; //rgba(255, 255, 255, 0.3);
+  }
 }
