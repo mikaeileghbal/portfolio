@@ -6,15 +6,9 @@ header {
   width: 100%;
 
   .container {
+    position: relative;
     display: flex;
     align-items: center;
-  }
-}
-
-.topnav {
-  display: none;
-  margin-left: auto;
-  @include tablet {
-    display: block;
+    overflow-x: hidden;
   }
 }
