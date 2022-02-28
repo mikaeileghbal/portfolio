@@ -10,6 +10,7 @@ const App = (function () {
   }
 
   menu.addEventListener("click", slideMenu);
+  menu.addEventListener("click", animateMenu);
 
   function slideMenu(event) {
     event.stopPropagation();
@@ -20,6 +21,8 @@ const App = (function () {
       openSideMenu();
     }
   }
+
+  function animateMenu() {}
 
   document.body.addEventListener("click", bodyClick, false);
 
