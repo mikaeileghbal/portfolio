@@ -1,0 +1,13 @@
+header {
+  background-color: $green-dark;
+  padding: 1.6em $container-padding-left-right;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+
+  .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+}
