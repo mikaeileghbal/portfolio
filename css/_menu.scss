@@ -75,25 +75,3 @@
 .change .bar3 {
   transform: rotate(45deg) translate(-8px, -4px);
 }
-
-.social {
-  padding: 24px;
-}
-
-.social i {
-  font-size: 22px;
-  margin: 0 0.2em;
-}
-
-.social > a:hover i {
-  color: white;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(180deg);
-  }
-}
