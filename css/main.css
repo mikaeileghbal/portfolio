@@ -55,12 +55,15 @@ header .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
 }
 
 header.slide {
   padding: 0.6em 1em;
   -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+=======
+>>>>>>> 901e22709a4683b26e7d67ef24444c8ecfe3ae25
 }
 
 .topnav {
@@ -164,7 +167,11 @@ header.slide {
           transform: rotate(45deg) translate(-8px, -4px);
 }
 
+<<<<<<< HEAD
 .link, .link--top, .logo {
+=======
+.link, .link--top, .link--social, .logo {
+>>>>>>> 901e22709a4683b26e7d67ef24444c8ecfe3ae25
   font-weight: 400;
   font-size: 1.2em;
   letter-spacing: 2px;
@@ -192,6 +199,13 @@ header.slide {
   color: #9daf62;
 }
 
+<<<<<<< HEAD
+=======
+.link--social:hover {
+  color: white;
+}
+
+>>>>>>> 901e22709a4683b26e7d67ef24444c8ecfe3ae25
 .button, .button--resume {
   text-decoration: none;
   padding: 1em 2em;
@@ -219,7 +233,11 @@ header.slide {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+<<<<<<< HEAD
   margin-top: 2em;
+=======
+  margin-top: 3em;
+>>>>>>> 901e22709a4683b26e7d67ef24444c8ecfe3ae25
   text-transform: capitalize;
 }
 
@@ -247,6 +265,7 @@ header.slide {
   transition: all 0.2s ease-in-out;
 }
 
+<<<<<<< HEAD
 .social .fa {
   padding: 4px;
   font-size: 20px;
@@ -268,6 +287,11 @@ header.slide {
 
 a > i {
   margin-right: 8px;
+=======
+.social i {
+  font-size: 22px;
+  margin: 0 0.5em;
+>>>>>>> 901e22709a4683b26e7d67ef24444c8ecfe3ae25
 }
 
 main {
@@ -343,6 +367,7 @@ main {
 }
 
 .about-section {
+<<<<<<< HEAD
   background-color: #6cb3b6;
   text-align: center;
   padding: 7em 0.5em;
@@ -358,6 +383,11 @@ main {
   .about-section {
     padding: 7em 0em;
   }
+=======
+  height: 100vh;
+  background-color: #6cb3b6;
+  text-align: center;
+>>>>>>> 901e22709a4683b26e7d67ef24444c8ecfe3ae25
 }
 
 .about-section .about-info {
@@ -371,6 +401,7 @@ main {
   font-weight: 300;
   letter-spacing: 1px;
   line-height: 1.7;
+<<<<<<< HEAD
   margin-top: 3em;
   margin-bottom: 1.5em;
 }
@@ -378,6 +409,8 @@ main {
 .about-section p + p {
   margin-top: 1.5em;
   margin-bottom: 3em;
+=======
+>>>>>>> 901e22709a4683b26e7d67ef24444c8ecfe3ae25
 }
 
 .section-title, .section-subtitle {
@@ -402,8 +435,11 @@ main {
 }
 
 .about-image img {
+<<<<<<< HEAD
   margin-top: 3em;
   margin-bottom: 1.5em;
+=======
+>>>>>>> 901e22709a4683b26e7d67ef24444c8ecfe3ae25
   width: 200px;
   border-radius: 50%;
   -webkit-filter: brightness(1.2) grayscale(0.3) opacity(0.8);

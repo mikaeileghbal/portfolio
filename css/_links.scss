@@ -22,12 +22,21 @@
     }
   }
 
+<<<<<<< HEAD
   // &--social {
   //   @extend .link;
   //   &:hover {
   //     color: white;
   //   }
   // }
+=======
+  &--social {
+    @extend .link;
+    &:hover {
+      color: white;
+    }
+  }
+>>>>>>> 901e22709a4683b26e7d67ef24444c8ecfe3ae25
 }
 
 .button {
@@ -77,6 +86,7 @@
   @include transition;
 }
 
+<<<<<<< HEAD
 .social .fa {
   padding: 4px;
   font-size: 20px;
@@ -96,4 +106,9 @@
 
 a > i {
   margin-right: 8px;
+=======
+.social i {
+  font-size: 22px;
+  margin: 0 0.5em;
+>>>>>>> 901e22709a4683b26e7d67ef24444c8ecfe3ae25
 }

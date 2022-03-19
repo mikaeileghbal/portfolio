@@ -1,4 +1,5 @@
 .about-section {
+<<<<<<< HEAD
   background-color: $green-middle;
   text-align: center;
   padding: 7em 0.5em;
@@ -9,6 +10,11 @@
   @include tablet {
     padding: 7em 0em;
   }
+=======
+  height: 100vh;
+  background-color: $green-middle;
+  text-align: center;
+>>>>>>> 901e22709a4683b26e7d67ef24444c8ecfe3ae25
 
   .about-info {
     max-width: 700px;
@@ -21,12 +27,15 @@
     font-weight: 300;
     letter-spacing: 1px;
     line-height: 1.7;
+<<<<<<< HEAD
     margin-top: 3em;
     margin-bottom: 1.5em;
     & + p {
       margin-top: 1.5em;
       margin-bottom: 3em;
     }
+=======
+>>>>>>> 901e22709a4683b26e7d67ef24444c8ecfe3ae25
   }
 }
 %title {
@@ -53,8 +62,11 @@
 
 .about-image {
   img {
+<<<<<<< HEAD
     margin-top: 3em;
     margin-bottom: 1.5em;
+=======
+>>>>>>> 901e22709a4683b26e7d67ef24444c8ecfe3ae25
     width: 200px;
     border-radius: 50%;
     filter: brightness(1.2) grayscale(0.3) opacity(0.8);
