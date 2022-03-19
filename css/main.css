@@ -74,6 +74,28 @@ section {
   padding: 7em 0.5em;
 }
 
+.section-title, .section-subtitle {
+  text-transform: uppercase;
+}
+
+.section-title {
+  color: #222;
+  position: relative;
+  font-weight: 300;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+}
+
+.section-subtitle {
+  font-size: 0.7em;
+  font-weight: 600;
+  letter-spacing: 3.5px;
+  word-spacing: 2px;
+  margin-top: 0.8em;
+  opacity: 0.7;
+  color: #005c6e;
+}
+
 header {
   background-color: #005c6e;
   padding: 1.6em 1em;
@@ -163,7 +185,7 @@ header.slide {
 .menu-container:hover .bar1,
 .menu-container:hover .bar2,
 .menu-container:hover .bar3 {
-  background-color: #9daf62;
+  background-color: #fa7978;
 }
 
 .menu-container.change {
@@ -226,21 +248,22 @@ header.slide {
 }
 
 .link--top:hover {
-  color: #9daf62;
+  color: #fa7978;
   text-decoration: underline;
 }
 
 .link--case {
-  color: #6f7098;
+  color: #005c6e;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 500;
   margin-right: 0em;
+  opacity: 0.7;
   letter-spacing: 0;
   text-transform: capitalize;
 }
 
 .link--case:hover {
-  color: #9daf62;
+  color: #fa7978;
   text-decoration: underline;
 }
 
@@ -262,6 +285,7 @@ header.slide {
 
 .button:hover, .button--resume:hover {
   background-color: rgba(255, 255, 255, 0.2);
+  background-color: #fa7978;
 }
 
 .button--resume {
@@ -299,25 +323,30 @@ header.slide {
   transition: all 0.2s ease-in-out;
 }
 
+.logo:hover {
+  color: #fa7978;
+}
+
 .social .fa {
   padding: 4px;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 500;
   margin: 10px;
-  width: 22px;
-  height: 22px;
+  width: 25px;
+  height: 25px;
   text-align: center;
   text-decoration: none;
-  border-radius: 50%;
+  border-radius: 6px;
   -webkit-box-sizing: unset;
           box-sizing: unset;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  color: #6f7098;
+  color: #005c6e;
 }
 
 .social .fa:hover {
-  color: black;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: #fa7978;
 }
 
 a > i {
@@ -457,27 +486,6 @@ main {
 .about-section p + p {
   margin-top: 1.5em;
   margin-bottom: 3em;
-}
-
-.section-title, .section-subtitle {
-  color: #222;
-  text-transform: uppercase;
-}
-
-.section-title {
-  position: relative;
-  font-weight: 300;
-  font-size: 1.5em;
-  letter-spacing: 2px;
-}
-
-.section-subtitle {
-  font-size: 0.7em;
-  font-weight: 600;
-  letter-spacing: 3.5px;
-  word-spacing: 2px;
-  margin-top: 0.8em;
-  opacity: 0.7;
 }
 
 .about-image img {
@@ -714,11 +722,11 @@ main {
 }
 
 .item__list--links li:hover .fa {
-  color: #9daf62;
+  color: #fa7978;
 }
 
 .item__list--links li .fa {
-  color: #6f7098;
+  color: #005c6e;
   margin-right: 0.4em;
   font-size: 1rem;
 }
