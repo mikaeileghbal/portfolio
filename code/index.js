@@ -62,8 +62,11 @@ const App = (function () {
 			desc: "Dynamic content",
 			tags: ["html", "css", "scss", "javascript"],
 			links: [
-				{ text: "view project", href: "calendar-planner/index.html" },
-				{ text: "view code", href: "#" },
+				{ text: "view project", href: "./calendar-planner/index.html" },
+				{
+					text: "view code",
+					href: "https://github.com/mikaeileghbal/calendar-planner.git",
+				},
 			],
 			src: "images/calendar.png",
 		},
@@ -72,8 +75,11 @@ const App = (function () {
 			desc: "Calling public API",
 			tags: ["html", "css", "scss", "javascript", "API"],
 			links: [
-				{ text: "view project", href: "#" },
-				{ text: "view code", href: "#" },
+				{ text: "view project", href: "./weather-item/index.html" },
+				{
+					text: "view code",
+					href: "https://github.com/mikaeileghbal/weather-items.git",
+				},
 			],
 			src: "images/weather-01.png",
 		},
@@ -82,10 +88,10 @@ const App = (function () {
 			desc: "Regular Expressions",
 			tags: ["html", "css", "scss", "javascript", "API"],
 			links: [
-				{ text: "view project", href: "wordcounter/index.html" },
+				{ text: "view project", href: "./wordcounter/index.html" },
 				{
 					text: "view code",
-					href: "https://github.com/mikaeileghbal/wordcounter",
+					href: "https://github.com/mikaeileghbal/wordcounter.git",
 				},
 			],
 			src: "images/wordcounter.png",
@@ -95,14 +101,18 @@ const App = (function () {
 			desc: "Web Components",
 			tags: ["html", "css", "scss", "javascript", "API"],
 			links: [
-				{ text: "view project", href: "#" },
-				{ text: "view code", href: "#" },
+				{ text: "view project", href: "./worlclock/index.html" },
+				{
+					text: "view code",
+					href: "https://github.com/mikaeileghbal/worldclock.git",
+				},
 			],
 			src: "images/calendar-2.png",
 		},
 	];
 	// Template for project iotem
-	itemTemplate.innerHTML = `<figure class="item">
+	itemTemplate.innerHTML = `
+							<figure class="item">
                 <img id="image" class="item__image" src="images/room4.jpg" alt="">
                 <figcaption class="item__header">
                     <h3 id="title" class="item__title">Calendar</h3>
@@ -112,17 +122,15 @@ const App = (function () {
                         copy from template to create new elements.
                     </p>
                     <ul class="item__list" id="tags">
-                        
                     </ul>
                     <ul class="item__list--links" id="viewlinks">
-                        
                     </ul>
                 </figcaption>
-            </figure>`;
+            	</figure>`;
 
 	// Iterate projects array and create each element
 	for (let i = 0; i < itemObjects.length; i++) {
-		createItem(itemObjects[i]);
+		projectcontainer.appendChild(createItem(itemObjects[i]));
 	}
 
 	// Create project items
@@ -144,15 +152,14 @@ const App = (function () {
 			tags.append(li);
 		}
 
-		console.log(item.links[0].href);
 		let li = `<li>
-              <i class="fa fa-cube"></i><a class="link--case" href="${item.links[0].href}">live project</a>
-            </li>
-            <li>
-              <i class="fa fa-github"></i><a class="link--case" href="${item.links[1].href}">view code</a>
-            </li>`;
+              	<i class="fa fa-cube"></i><a class="link--case" href="${item.links[0].href}">live project</a>
+            	</li>
+            	<li>
+              	<i class="fa fa-github"></i><a class="link--case" href="${item.links[1].href}">view code</a>
+            	</li>`;
 
 		viewlinks.innerHTML = li;
-		projectcontainer.append(newItem);
+		return newItem;
 	}
 })();

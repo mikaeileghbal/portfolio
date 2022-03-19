@@ -1,14 +1,5 @@
 .case-study-section {
 	background-color: $gray;
-	//@media screen and (min-width: 769px) {
-
-	//}
-	//padding: 3em 2em;
-
-	/* ======================== 
- 	Mobile Styles: 0px to 480px 
- 	===========================
-	*/
 
 	.case-title {
 		color: $black;
@@ -24,32 +15,18 @@
 		margin: 8em auto 5em;
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-		//grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
 		row-gap: 1.25em;
 		column-gap: 2.5em;
 		counter-reset: slide-number;
 
-		// @media screen and (max-width: 768px) {
-		//   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-		// }
-
-		// @media screen and (min-width: 769px) {
-		//   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-		// }
-
-		// Project item styles
 		.item {
 			height: 300px;
-			//order: 10px solid white;
-
 			position: relative;
 			overflow: hidden;
 			display: flex;
 			flex-flow: column nowrap;
-			//border-radius: 8px;
 			background-color: white;
-			//background-image: linear-gradient(to top, $black 40%, transparent 100%);
-			//box-shadow: 0 0px 2px rgba(0, 0, 0, 0.1);
 			box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
 			counter-increment: slide-number;
 			transition: all 0.3s;
@@ -67,11 +44,9 @@
 
 			&:hover {
 				box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-				//transform: scale(1.01);
 			}
 
 			&:hover .item__header {
-				//background-color: $black;
 				transform: translateY(0px);
 				opacity: 1;
 			}
@@ -81,37 +56,24 @@
 			&:hover p {
 				transform: translate(0, -28px);
 			}
-			&:hover .item__image {
-				//opacity: 0.6;
-				//transform: scale(1.02);
-			}
 			&:hover .item__list {
 				opacity: 1;
 				transform: translateY(-25px);
 			}
 		}
-		// Project item text content styles
+
 		.item__header {
-			//height: 100%;
 			position: absolute;
 			width: 100%;
 			height: 36%;
 			left: 0;
 			bottom: 0;
 			padding: 1.25em 1em;
-			//padding-top: 13em;
 			display: flex;
 			flex-flow: column;
 			justify-content: center;
 			align-items: center;
-			//margin-bottom: 0em;
 			background-color: white;
-			// background-image: linear-gradient(
-			// 	to top,
-			// 	$black 25%,
-			// 	rgba(0, 92, 110, 0.3) 50%,
-			// 	transparent 100%
-			//);
 			opacity: 1;
 			text-align: center;
 			z-index: 2;
@@ -123,7 +85,6 @@
 				font-weight: 500;
 				font-size: 1.2em;
 				text-transform: capitalize;
-				//transform: translate(0px, 40px);
 				user-select: none;
 				opacity: 1;
 				transition: opacity 0.2s;
@@ -160,7 +121,6 @@
 	animation: card-show 0.3s ease-out;
 }
 
-// Project item tag and links styles
 .item__list {
 	list-style: none;
 	display: none;
