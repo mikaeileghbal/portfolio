@@ -96,6 +96,21 @@ section {
   color: #005c6e;
 }
 
+p {
+  font-size: 0.9em;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 1.7;
+  margin-top: 3em;
+  margin-bottom: 1.5em;
+}
+
+p + p {
+  margin-top: 1.5em;
+  margin-bottom: 3em;
+}
+
 header {
   background-color: #005c6e;
   padding: 1.6em 1em;
@@ -267,7 +282,7 @@ header.slide {
   text-decoration: underline;
 }
 
-.button, .button--resume {
+.button, .button--resume, .button--email {
   text-decoration: none;
   padding: 1em 2em;
   font-weight: 400;
@@ -283,7 +298,7 @@ header.slide {
   transition: background-color 0.2s;
 }
 
-.button:hover, .button--resume:hover {
+.button:hover, .button--resume:hover, .button--email:hover {
   background-color: rgba(255, 255, 255, 0.2);
   background-color: #fa7978;
 }
@@ -305,6 +320,11 @@ header.slide {
     margin-top: 0;
     font-size: 0.8em;
   }
+}
+
+.button--email {
+  display: inline-block;
+  margin-bottom: 5em;
 }
 
 .logo {
@@ -345,7 +365,6 @@ header.slide {
 }
 
 .social .fa:hover {
-  color: rgba(255, 255, 255, 0.7);
   background-color: #fa7978;
 }
 
@@ -471,21 +490,6 @@ main {
 .about-section .about-info {
   max-width: 700px;
   margin: 0 auto;
-}
-
-.about-section p {
-  font-size: 0.9em;
-  color: white;
-  font-weight: 300;
-  letter-spacing: 1px;
-  line-height: 1.7;
-  margin-top: 3em;
-  margin-bottom: 1.5em;
-}
-
-.about-section p + p {
-  margin-top: 1.5em;
-  margin-bottom: 3em;
 }
 
 .about-image img {
@@ -796,5 +800,15 @@ main {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.contact-section {
+  background-color: #6cb3b6;
+}
+
+.contact-text {
+  margin: 3em auto;
+  color: white;
+  max-width: 700px;
 }
 /*# sourceMappingURL=main.css.map */
