@@ -21,11 +21,11 @@
 			<div class="container">
 				<a id="logo" class="logo" href="">m</a>
 				<nav class="topnav">
-					<a class="link--top" href="index.html#top">home</a>
-					<a class="link--top" href="index.html#about-section">about</a>
-					<a class="link--top" href="index.html">projects</a>
-					<a class="link--top" href="index.html">contact</a>
-					<a class="button--resume" href="index.html">resume</a>
+					<a class="link--top" href="#top">home</a>
+					<a class="link--top" href="#about-section">about</a>
+					<a class="link--top" href="#case-study-section">projects</a>
+					<a class="link--top" href="#contact-section">contact</a>
+					<a class="button--resume" href="#">resume</a>
 				</nav>
 				<div class="menu-container menubtn">
 					<div class="bar1"></div>
@@ -58,13 +58,13 @@
 						Hello! I'm a web developer focused on front-end. Mostly I use divide
 						and conquer algorithm to solve my everyday issues.
 					</p>
-					<a class="button" href="index.html">view my work</a>
+					<a id="hero-button" class="button" href="index.html">view my work</a>
 				</div>
 			</div>
 		</main>
 
 		<!-- About section -->
-		<section id="about-section" class="about-section">
+		<section id="about-section" class="about-section centered-text">
 			<div class="title-container">
 				<h2 class="section-title">About me</h2>
 				<h4 class="section-subtitle">a brief description about me</h4>
@@ -100,7 +100,7 @@
 						<span class="language__item">Turkish</span
 						><img src="images/tr.svg" alt="" />,
 						<span class="language__item">Persian</span
-						><img src="images/ir.png" alt="" /> and
+						><img src="images/ir.png" alt="" /> and I am learning
 						<span class="language__item">Deutsch</span
 						><img src="images/gr.png" alt="" />
 					</p>
@@ -110,6 +110,68 @@
 					</a>
 				</article>
 			</div>
+		</section>
+
+		<!-- Projects section -->
+		<section id="case-study-section" class="case-study-section centered-text">
+			<div class="title-container">
+				<h2 class="section-title">projects</h2>
+				<h4 class="section-subtitle">I have built web applications</h4>
+			</div>
+			<div class="project__container">
+				<!-- <figure class="item">
+					<img id="image" class="item__image" src="images/room4.jpg" alt="" />
+					<figcaption class="item__header">
+						<h3 id="title" class="item__title">Calendar</h3>
+						<p id="desc" class="item__desc">
+							Dynamic content manipulating with javascript. Get elements of
+							document, create template and clone copy from template to create
+							new elements.
+						</p>
+						<ul class="item__list" id="tags">
+							<li>html</li>
+							<li>css</li>
+							<li>scss</li>
+							<li>javascripr</li>
+						</ul>
+						<ul class="item__list--links" id="links">
+							<li>
+								<i class="fa fa-cube"></i
+								><a class="link--case" href="">view project</a>
+							</li>
+							<li>
+								<i class="fa fa-github"></i
+								><a class="link--case" href="">view code</a>
+							</li>
+						</ul>
+					</figcaption>
+				</figure> -->
+			</div>
+		</section>
+
+		<!-- Contact section -->
+		<section id="contact-section" class="contact-section centered-text">
+			<div class="title-container">
+				<h2 class="section-title">Contact</h2>
+				<h4 class="section-subtitle">Would you like to contact?</h4>
+			</div>
+
+			<p class="contact-text">
+				If you like my work and would like to work together, please send me
+				direct message or contact me through my social links.
+			</p>
+			<a
+				href="mailto:mikaeileghbal@yahoo.com"
+				class="button--email"
+				tag="message"
+				><i class="fa fa-envelope"></i> Send message</a
+			>
+			<article class="contact-social social">
+				<a class="fa fa-facebook" href="http://facebook.com/mikaeileghbal"></a>
+				<a class="fa fa-instagram" href="http://instagram/mikaeil.e"> </a>
+				<a class="fa fa-linkedin" href="http://linkedin.com/mikaeileghbal"> </a>
+				<a class="fa fa-github" href="https://github.com/mikaeileghbal"> </a>
+			</article>
 		</section>
 
 		<script src="code/index.js"></script>

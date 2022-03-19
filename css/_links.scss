@@ -18,16 +18,26 @@
 		}
 
 		&:hover {
-			color: $green-light;
+			color: $red;
+			text-decoration: underline;
 		}
 	}
 
-	// &--social {
-	//   @extend .link;
-	//   &:hover {
-	//     color: white;
-	//   }
-	// }
+	&--case {
+		@extend .link;
+		color: $green-dark;
+		font-size: 1em;
+		font-weight: 500;
+		margin-right: 0em;
+		opacity: 0.7;
+		letter-spacing: 0;
+		text-transform: capitalize;
+
+		&:hover {
+			color: $red;
+			text-decoration: underline;
+		}
+	}
 }
 
 .button {
@@ -45,6 +55,7 @@
 
 	&:hover {
 		background-color: rgba(255, 255, 255, 0.2);
+		background-color: $red;
 	}
 
 	&--resume {
@@ -61,6 +72,12 @@
 			font-size: 0.8em;
 		}
 	}
+
+	&--email {
+		@extend .button;
+		display: inline-block;
+		margin-bottom: 5em;
+	}
 }
 
 .logo {
@@ -75,23 +92,27 @@
 	clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
 	transform-style: preserve-3d;
 	@include transition;
+	&:hover {
+		color: $red;
+	}
 }
 
 .social .fa {
 	padding: 4px;
 	font-size: 24px;
-	font-weight: 700;
+	font-weight: 500;
 	margin: 10px;
-	width: 22px;
-	height: 22px;
+	width: 25px;
+	height: 25px;
 	text-align: center;
 	text-decoration: none;
-	border-radius: 50%;
+	border-radius: 6px;
 	box-sizing: unset;
 	@include transition;
-	color: $blue-dark;
+	color: $green-dark;
 	&:hover {
-		color: black;
+		//color: rgba(255, 255, 255, 0.7);
+		background-color: $red;
 	}
 }
 
