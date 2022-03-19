@@ -1,6 +1,6 @@
 .topnav {
   height: 100%;
-  width: 75vw;
+  width: calc(min(75vw, 400px));
   position: fixed;
   z-index: 1;
   top: 0;
@@ -56,7 +56,8 @@
   height: 2px;
   background-color: $gray;
   margin: 6px 0;
-  @include transition;
+  transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1.2);
+  //@include transition;
 }
 
 .bar2 {
