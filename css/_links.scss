@@ -19,9 +19,24 @@
 
 		&:hover {
 			color: $green-light;
+			text-decoration: underline;
 		}
 	}
 
+	&--case {
+		@extend .link;
+		color: $blue-dark;
+		font-size: 1em;
+		font-weight: 400;
+		margin-right: 0em;
+		letter-spacing: 0;
+		text-transform: capitalize;
+
+		&:hover {
+			color: $green-light;
+			text-decoration: underline;
+		}
+	}
 	// &--social {
 	//   @extend .link;
 	//   &:hover {

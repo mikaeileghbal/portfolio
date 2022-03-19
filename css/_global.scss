@@ -85,3 +85,20 @@ $tiny-mobile-width: 330px;
 		@content;
 	}
 }
+
+@mixin animation-slide-up($delay) {
+	animation: slide-up;
+	animation-delay: $delay;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+@keyframes slide-up {
+	from {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
