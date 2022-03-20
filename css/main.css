@@ -70,7 +70,8 @@ body {
   text-align: center;
 }
 
-section {
+section,
+footer {
   padding: 7em 0.5em;
 }
 
@@ -238,33 +239,48 @@ header.slide {
           transform: rotate(45deg) translate(-8px, -4px);
 }
 
-.link, .link--top, .link--case, .logo {
+.link, .link--top, .link--footer, .link--case, .logo {
   font-weight: 400;
   font-size: 1.2em;
   letter-spacing: 2px;
   text-decoration: none;
-  padding: 26px 0px;
+  padding: 8px 8px;
+  margin: 18px 0;
   color: #f8f8f8;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
-.link--top {
+.link--top, .link--footer {
   display: block;
   text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {
-  .link--top {
+  .link--top, .link--footer {
     font-size: 0.8em;
-    margin-right: 3em;
-    padding: 8px 0px;
+    margin: 0;
+    margin-right: 2.4em;
+    padding: 8px 8px;
   }
 }
 
-.link--top:hover {
+.link--top:hover, .link--footer:hover {
   color: #fa7978;
   text-decoration: underline;
+}
+
+.link--footer {
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0.5em;
+}
+
+@media screen and (min-width: 480px) {
+  .link--footer {
+    display: inline-block;
+    margin: 0 1em;
+  }
 }
 
 .link--case {
@@ -280,6 +296,11 @@ header.slide {
 .link--case:hover {
   color: #fa7978;
   text-decoration: underline;
+}
+
+.link--top.active {
+  color: #fa7978;
+  border: 1px dashed #fa7978;
 }
 
 .button, .button--resume, .button--email {
@@ -312,6 +333,7 @@ header.slide {
       align-self: center;
   margin-top: 2em;
   text-transform: capitalize;
+  background-color: #fa7978;
 }
 
 @media screen and (min-width: 768px) {
@@ -356,6 +378,7 @@ header.slide {
   height: 25px;
   text-align: center;
   text-decoration: none;
+  border: 1px dashed transparent;
   border-radius: 6px;
   -webkit-box-sizing: unset;
           box-sizing: unset;
@@ -365,7 +388,7 @@ header.slide {
 }
 
 .social .fa:hover {
-  background-color: #fa7978;
+  color: #fa7978;
 }
 
 a > i {
@@ -543,6 +566,7 @@ main {
   background-color: white;
   -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
           box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+  border: 1px dashed transparent;
   counter-increment: slide-number;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -560,8 +584,9 @@ main {
 }
 
 .case-study-section .project__container .item:hover {
-  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border: 1px dashed #fa7978;
 }
 
 .case-study-section .project__container .item:hover .item__header {
@@ -581,8 +606,8 @@ main {
 
 .case-study-section .project__container .item:hover .item__list, .case-study-section .project__container .item:hover .item__list--links {
   opacity: 1;
-  -webkit-transform: translateY(-25px);
-          transform: translateY(-25px);
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
 }
 
 .case-study-section .project__container .item__header {
@@ -624,6 +649,7 @@ main {
       -ms-user-select: none;
           user-select: none;
   opacity: 1;
+  margin-top: 1.5em;
   -webkit-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
@@ -652,15 +678,8 @@ main {
   background-color: white;
   z-index: 1;
   opacity: 1;
-  -webkit-transition: opacity 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition: opacity 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.case-study-section .item__image img {
-  border-radius: 8px;
-  background-color: white;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .animate {
@@ -680,8 +699,8 @@ main {
   margin-top: 0em;
   background-color: white;
   opacity: 0;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
   -webkit-transition: opacity 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: opacity 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -810,5 +829,86 @@ main {
   margin: 3em auto;
   color: white;
   max-width: 700px;
+}
+
+.section-footer {
+  position: relative;
+  background-color: #005c6e;
+}
+
+.section-footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__gotop {
+  width: 1.5em;
+  height: 1.5em;
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.footer__gotop span {
+  position: absolute;
+  width: 1.5em;
+  height: 1.5em;
+  left: 0px;
+  top: 0px;
+  border-left: 3px solid white;
+  border-top: 3px solid white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer__gotop span::before {
+  content: "home";
+  position: absolute;
+  font-size: 0.7rem;
+  left: 2px;
+  color: white;
+  bottom: -6px;
+  width: 1.5em;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  opacity: 0;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer__gotop:hover span::before {
+  opacity: 1;
+  color: white;
+  -webkit-transform: translateY(0) rotate(-45deg);
+          transform: translateY(0) rotate(-45deg);
+}
+
+.footer__gotop:hover span {
+  border-color: #fa7978;
+  -webkit-transform: translateY(-10px) scale(1.2) rotate(45deg);
+          transform: translateY(-10px) scale(1.2) rotate(45deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer__copyright p {
+  color: #bbbfcd;
+  font-style: italic;
+  font-size: 0.8em;
 }
 /*# sourceMappingURL=main.css.map */
