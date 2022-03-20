@@ -81,7 +81,7 @@ const App = (function () {
 	let itemObjects = [
 		{
 			title: "calendar",
-			desc: "Dynamic content",
+			desc: "Dynamic Content",
 			tags: ["html", "css", "scss", "javascript"],
 			links: [
 				{ text: "view project", href: "./calendar-planner/index.html" },
@@ -90,11 +90,11 @@ const App = (function () {
 					href: "https://github.com/mikaeileghbal/calendar-planner.git",
 				},
 			],
-			src: "images/calendar.png",
+			src: "./images/calendar.png",
 		},
 		{
 			title: "weather",
-			desc: "Calling public API",
+			desc: "Calling Public API",
 			tags: ["html", "css", "scss", "javascript", "API"],
 			links: [
 				{ text: "view project", href: "./weather-items/index.html" },
@@ -103,7 +103,7 @@ const App = (function () {
 					href: "https://github.com/mikaeileghbal/weather-items.git",
 				},
 			],
-			src: "images/weather-01.png",
+			src: "./images/weather.png",
 		},
 		{
 			title: "wordcounter",
@@ -116,7 +116,7 @@ const App = (function () {
 					href: "https://github.com/mikaeileghbal/wordcounter.git",
 				},
 			],
-			src: "images/wordcounter.png",
+			src: "./images/wordcounter.png",
 		},
 		{
 			title: "worldclock",
@@ -129,7 +129,7 @@ const App = (function () {
 					href: "https://github.com/mikaeileghbal/worldclock.git",
 				},
 			],
-			src: "images/calendar-2.png",
+			src: "./images/worldclock.png",
 		},
 	];
 	// Template for project iotem
