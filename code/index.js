@@ -1,4 +1,20 @@
 const App = (function () {
+	const topLinks = document.querySelectorAll(".link--top");
+	topLinks.forEach((link) => {
+		link.addEventListener("click", (e) => {
+			activeTopLink(e.target);
+		});
+	});
+
+	function activeTopLink(elem) {
+		console.log(topLinks);
+		console.log(elem);
+		topLinks.forEach((a) => {
+			a.classList.remove("active");
+		});
+		elem.classList.add("active");
+	}
+
 	const menu = document.querySelector(".menu-container");
 
 	function closeSideMenu() {
@@ -44,10 +60,16 @@ const App = (function () {
 		const scroll =
 			document.documentElement.scrollTop || document.body.scrollTop;
 
+		// Set header style
 		if (scroll > 20) {
 			header.classList.add("slide");
 		} else {
 			header.classList.remove("slide");
+		}
+
+		// Set active top link
+		if (scroll === 0) {
+			activeTopLink(document.querySelectorAll(".link--top")[0]);
 		}
 	}
 
