@@ -133,7 +133,7 @@ const App = (function () {
 		},
 		{
 			title: "news",
-			desc: "Web Components and Public API ",
+			desc: "Web Components & Public API ",
 			tags: ["html", "css", "scss", "javascript", "API"],
 			links: [
 				{ text: "view project", href: "./news/index.html" },

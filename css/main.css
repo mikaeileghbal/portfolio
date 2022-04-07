@@ -607,8 +607,13 @@ main {
 
 .case-study-section .project__container .item:hover .item__list, .case-study-section .project__container .item:hover .item__list--links {
   opacity: 1;
-  -webkit-transform: translateY(-30px);
-          transform: translateY(-30px);
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.case-study-section .project__container .item:hover .item__image {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
 }
 
 .case-study-section .project__container .item__header {
@@ -694,7 +699,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 0em;
+  margin-top: -1em;
   background-color: white;
   opacity: 0;
   -webkit-transform: translateY(0px);
