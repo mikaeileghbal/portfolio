@@ -148,7 +148,7 @@ const App = (function () {
 	// Template for project iotem
 	itemTemplate.innerHTML = `
 							<figure class="item">
-                <img id="image" class="item__image" src="images/room4.jpg" alt="">
+               	<img id="image" class="item__image" src="images/room4.jpg" alt="">
                 <figcaption class="item__header">
                     <h3 id="title" class="item__title">Calendar</h3>
                     <p id="desc" class="item__desc">Dynamic content manipulating with javascript. Get elements of
